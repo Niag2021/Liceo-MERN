@@ -1,8 +1,10 @@
 //console.log('Hola Niag'); 
 import express from 'express';
+import {PORT} from './config.js'
+import indexRoutes from './routes/index.routes.js' 
 
 const app = express(); 
 
-app.listen(3000)
-
-console.log('Servidor ejecutandose en el puerto 3000.'); 
+app.use(indexRoutes)
+app.listen(PORT)
+console.log('Servidor ejecutandose en el puerto '+PORT+"."); 
