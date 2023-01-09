@@ -7,6 +7,7 @@ export const getTask = (req, res) => {
 } 
 
 export const createTask = (req, res) => { 
+    console.log(req.body); 
     res.send('Creando tarea.'); 
 } 
 
