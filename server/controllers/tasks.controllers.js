@@ -6,8 +6,10 @@ export const getTasks = async (req, res) => {
     res.json(result);
 } 
 
-export const getTask = (req, res) => { 
-    res.send('Obteniendo tarea.'); 
+export const getTask = async (req, res) => { 
+    //res.send('Obteniendo tarea.'); 
+    const [result] = await pool.query("SELECT * FROM tasks WHERE id = ? ", [req.params.id]); 
+    res.json(result); 
 } 
 
 export const createTask = async (req, res) => { 
