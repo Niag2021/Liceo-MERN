@@ -1,4 +1,3 @@
-import { json } from 'express';
 import { pool } from '../db.js'; 
 
 export const getTasks = async (req, res) => { 
@@ -23,7 +22,7 @@ export const createTask = async (req, res) => {
     console.log(result);
     res.json({id: result.insertId, title, description});
     //console.log(req.body); 
-    res.send('Creando tarea.');
+    //res.send('Creando tarea.');
 } 
 
 export const updateTask = (req, res) => { 
