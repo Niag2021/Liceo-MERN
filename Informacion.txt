@@ -1,9 +1,9 @@
-Video: 01:00:16 /// 02:55:35 
+Video: 01:08:53 /// 02:55:35 
 
 * Client: 
     npm start 
 
-
+    - react router dom => Para crear rutas 
 
 * Server: 
 

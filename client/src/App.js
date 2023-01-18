@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import TasksPage from './pages/TasksPage.js';
+import TasksForm from './pages/TaskForm.js';
+import NotFound from './pages/NotFound.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />        
-      </header>
-    </div>
+      <Routes>
+        <Route path="/" element={ <TasksPage/> }/>
+        <Route path="/new" element={ <TasksForm/> }/>
+        <Route path="*" element={ <NotFound/> }/>
+      </Routes>
   );
 }
 
