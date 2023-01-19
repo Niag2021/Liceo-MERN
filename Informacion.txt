@@ -1,9 +1,15 @@
-Video: 01:08:53 /// 02:55:35 
+Video: 01:26:45 /// 02:55:35 
 
 * Client: 
     npm start 
 
-    - react router dom => Para crear rutas 
+    - route/routes => Para crear rutas. 
+    - Link => Para crear links para navegar. 
+    - formik => Para crear formularios. 
+    - axios => Biblioteca para enviar los valores al back-end mediante peticiones http. 
+    - cors => para permitirse conectarse al back-end. 
+
+
 
 * Server: 
 
