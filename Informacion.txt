@@ -1,4 +1,4 @@
-Video: 01:26:45 /// 02:55:35 
+Video: 01:36:40 /// 02:55:35 
 
 * Client: 
     npm start 
@@ -8,8 +8,6 @@ Video: 01:26:45 /// 02:55:35
     - formik => Para crear formularios. 
     - axios => Biblioteca para enviar los valores al back-end mediante peticiones http. 
     - cors => para permitirse conectarse al back-end. 
-
-
 
 * Server: 
 
